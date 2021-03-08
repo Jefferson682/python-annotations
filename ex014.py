@@ -41,3 +41,29 @@ def som(*n):
 
 print(som(5,4))
 
+# Exemplo de função para dobrar números:
+numeros = list()
+numeros = [1,2,6,8,5,6]
+print(numeros)
+
+def dobrar(list):
+    lista = []
+    for item in list:
+        lista.append(item*2)
+    return lista
+
+print(dobrar(numeros))
+
+# Função para substituir nulos
+nomes = ['null', 'João', 'José', 'Maria', 'null', 'Marcelo', 'Josefa', 'null']
+
+def retiraNull(list):
+    for i, nome in enumerate(list):
+        if nome == 'null':
+            list[i] = 'NULO'
+    return list
+
+print(nomes)
+print(retiraNull(nomes))
+
+
